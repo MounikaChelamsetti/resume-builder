@@ -1,150 +1,172 @@
 # 🚀 AI-Powered Resume Builder
 
 <p align="center">
-<b>Build professional, ATS-friendly resumes with the power of AI.</b>
+  <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vite-Frontend-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/Node.js-Backend-339933?style=for-the-badge&logo=node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/Express.js-API-000000?style=for-the-badge&logo=express&logoColor=white" />
+  <img src="https://img.shields.io/badge/MongoDB-Database-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
+  <img src="https://img.shields.io/badge/Google%20Gemini-AI-4285F4?style=for-the-badge&logo=google&logoColor=white" />
 </p>
 
 <p align="center">
-A full-stack web application that helps users create, customize, enhance, preview, and share professional resumes.
+  <strong>A full-stack AI-powered platform for creating, editing, customizing, downloading, and sharing professional resumes.</strong>
 </p>
 
 <p align="center">
-🌐 <a href="https://resume-builder-ashen-omega.vercel.app/"><b>Live Demo</b></a>
-&nbsp;&nbsp;•&nbsp;&nbsp;
-💻 <a href="https://github.com/MounikaChelamsetti/resume-builder"><b>Source Code</b></a>
+  <a href="https://resume-builder-ashen-omega.vercel.app/">
+    🌐 <strong>Live Demo</strong>
+  </a>
+  &nbsp;&nbsp;•&nbsp;&nbsp;
+  <a href="https://github.com/MounikaChelamsetti/resume-builder">
+    💻 <strong>Source Code</strong>
+  </a>
 </p>
 
 ---
 
-## ✨ Project Overview
+## 📌 Overview
 
-Creating a professional resume from scratch can be challenging. Users often spend a lot of time deciding what to write, how to structure their information, and how to make their resume visually professional.
+Creating a professional resume from scratch can be time-consuming. Users often struggle with structuring their experience, writing effective professional summaries, choosing suitable templates, and maintaining a consistent professional design.
 
-**AI-Powered Resume Builder** provides a complete solution by combining a modern resume editor with AI-assisted content enhancement.
+**AI-Powered Resume Builder** solves this problem by providing an interactive full-stack platform where users can create and manage professional resumes with the help of AI.
 
-Users can create a resume, choose a template, customize its appearance, improve their content using AI, upload profile images, preview the final result, and share their resume online.
+The application allows users to:
 
----
-
-## 🎯 What Can You Do With It?
-
-| Feature | Description |
-| --- | --- |
-| 👤 **User Authentication** | Create an account and securely manage personal resumes |
-| 📝 **Resume Creation** | Build resumes with personal, education, experience, projects, and skills |
-| 🤖 **AI Enhancement** | Improve resume content using Google Gemini AI |
-| 🎨 **Multiple Templates** | Choose between different professional resume layouts |
-| 🌈 **Custom Colors** | Personalize the resume using accent colors |
-| 📄 **Resume Parsing** | Upload an existing resume and extract information |
-| 🖼️ **Profile Images** | Upload and manage profile images using ImageKit |
-| 👀 **Live Preview** | Preview the resume while editing |
-| 📥 **Resume Download** | Generate and download the completed resume |
-| 🔗 **Public Sharing** | Share resumes through a public link |
-| 📱 **Responsive UI** | Designed to work across desktop, tablet, and mobile |
+- 👤 Create an account and securely log in
+- 📝 Create resumes from scratch
+- ✏️ Edit resume information dynamically
+- 🤖 Improve resume content using Google Gemini AI
+- 🎨 Choose from multiple resume templates
+- 🌈 Customize resume accent colors
+- 🖼️ Upload and manage profile images
+- 📄 Parse uploaded resume/PDF content
+- 👀 Preview resumes before downloading
+- 📥 Download completed resumes
+- 🔗 Share resumes publicly when required
+- 🔒 Keep resumes associated with authenticated users
+- ☁️ Access the application through a cloud deployment
 
 ---
 
-## ⭐ Key Features
+## ✨ Key Features
 
-### 🔐 Secure Authentication
+### 🔐 Authentication
 
-Users can register and log in securely.
+Users can create an account and securely access their resumes.
 
+The authentication system provides:
+
+- User registration
+- User login
 - JWT-based authentication
-- Password hashing using bcrypt
 - Protected API routes
 - User-specific resume access
+- Password hashing using `bcrypt`
+
+Each authenticated user can access and manage their own resume data.
 
 ---
 
-### 📝 Professional Resume Creation
+### 📝 Resume Creation
 
-Users can create a complete resume by adding:
+Users can create a professional resume by entering information such as:
 
-- 👤 Personal information
-- 📌 Professional summary
-- 💼 Work experience
-- 🎓 Education
-- 🚀 Projects
-- 🛠️ Skills
+- Personal information
+- Professional summary
+- Education
+- Work experience
+- Projects
+- Skills
+- Other relevant resume information
 
-All resume information is stored and associated with the authenticated user.
+Resume data is stored in MongoDB and associated with the authenticated user.
 
 ---
 
 ### 🤖 AI-Powered Resume Assistance
 
-The application integrates **Google Gemini AI** to help users improve their resume content.
+The backend integrates **Google Gemini AI** to provide AI-assisted resume content generation and improvement.
 
-Instead of manually rewriting every section, users can provide basic content and receive more polished, concise, and professional wording.
+Users can provide basic content and use AI assistance to make it:
 
-**AI assistance can be used for:**
+- More professional
+- Concise
+- Clear
+- Job-oriented
+- ATS-friendly
 
-- Professional summary enhancement
-- Resume content improvement
-- Professional wording
-- ATS-friendly content
+This reduces the effort required to write strong resume content.
 
 ---
 
 ### 🎨 Multiple Resume Templates
 
-Users can choose from different designs depending on their preferred style.
+The application provides multiple resume layouts so users can select a design that matches their professional requirements.
 
-| Template | Style |
-| --- | --- |
-| 📄 Classic | Traditional professional layout |
-| ✨ Modern | Modern design with visual accents |
-| 🖊️ Minimal | Clean and content-focused |
-| 🖼️ Minimal Image | Minimal design with profile image |
+Available template styles include:
 
-Users can switch between templates without losing their resume information.
+| Template | Description |
+|---|---|
+| 📄 Classic | Traditional professional resume layout |
+| ✨ Modern | Modern layout with visual accents |
+| 🖊️ Minimal | Clean and content-focused design |
+| 🖼️ Minimal Image | Minimal layout with profile image |
 
----
-
-### 🌈 Resume Customization
-
-Users can personalize the appearance of their resume using an accent-color picker.
-
-This allows the same resume content to be presented in different visual styles while keeping the information unchanged.
+Users can switch between templates while editing their resume.
 
 ---
 
-### 🔗 Public Resume Sharing
+### 🌈 Custom Accent Colors
 
-Users can generate a public resume and share it through a link.
+Users can customize the visual appearance of their resume using an accent color selector.
 
-This can be useful when applying for:
-
-- 💼 Jobs
-- 🏢 Internships
-- 🎓 Opportunities
-- 👨‍💼 Recruiter reviews
+This allows the same resume content to be presented with different visual styles without changing the actual information.
 
 ---
 
-## 🖥️ Application Highlights
+### 🖼️ Profile Image Management
 
-```text
-┌────────────────────────────────────────────────────┐
-│ AI RESUME BUILDER │
-├────────────────────────────────────────────────────┤
-│ │
-│ 👤 Create Account │
-│ ↓ │
-│ 📝 Build Your Resume │
-│ ↓ │
-│ 🤖 Enhance Content with AI │
-│ ↓ │
-│ 🎨 Choose Your Template │
-│ ↓ │
-│ 🌈 Customize Your Resume │
-│ ↓ │
-│ 👀 Preview & Edit │
-│ ↓ │
-│ 📥 Download / 🔗 Share │
-│ │
-└────────────────────────────────────────────────────┘
+The application supports profile image upload and management.
+
+**ImageKit** is used for image storage and delivery, allowing uploaded profile images to be handled separately from the main application server.
+
+---
+
+### 📄 Resume / PDF Parsing
+
+The application supports processing uploaded resume content.
+
+This makes it possible to extract useful information from an existing resume and reduce the amount of manual data entry required.
+
+---
+
+### 👀 Resume Preview
+
+Users can preview their resume while editing it.
+
+The preview helps users verify:
+
+- Content
+- Layout
+- Template
+- Accent colors
+- Profile image
+- Overall appearance
+
+before downloading or sharing the final resume.
+
+---
+
+### 📥 Download & 🔗 Sharing
+
+Once a resume is completed, users can:
+
+- Download the resume
+- Share the resume
+- Generate a public resume view when sharing is enabled
+
+This makes the application useful both for creating a resume and distributing it to recruiters or employers.
 
 ---
 
@@ -152,568 +174,579 @@ This can be useful when applying for:
 
 This project follows a **full-stack client-server architecture**.
 
-The React frontend communicates with the Node.js and Express backend through REST APIs. The backend handles authentication, resume data, AI processing, database operations, and image management.
+The React frontend communicates with the Node.js + Express backend through REST APIs.
 
-```text
-👤 USER
-│
-▼
-┌─────────────────────┐
-│ React + Vite │
-│ Frontend │
-└──────────┬──────────┘
-│
-REST API
-│
-▼
-┌─────────────────────┐
-│ Node.js + Express │
-│ Backend │
-└───────┬─┬─┬─────────┘
-│ │ │
-┌──────────┘ │ └──────────┐
-▼ ▼ ▼
-┌────────────┐ ┌───────────┐ ┌────────────┐
-│ MongoDB │ │ Gemini AI │ │ ImageKit │
-│ Database │ │ AI │ │ Images │
-└────────────┘ └───────────┘ └────────────┘
----
-## 🔄 How the Application Works
+The backend is responsible for authentication, resume management, database operations, AI processing, and image-related operations.
 
-The application follows this overall workflow:
+```mermaid
+flowchart TD
+    A[👤 User] --> B[⚛️ React + Vite Frontend]
+    B -->|REST API| C[🟢 Node.js + Express Backend]
 
-```text
-👤 User
-│
-▼
-🔐 Login / Register
-│
-▼
-📝 Create Resume
-│
-├── 👤 Personal Information
-├── 💼 Experience
-├── 🎓 Education
-├── 🚀 Projects
-└── 🛠️ Skills
-│
-▼
-🤖 Enhance Content with AI
-│
-▼
-🎨 Select Resume Template
-│
-▼
-🌈 Customize Resume
-│
-▼
-👀 Preview Resume
-│
-├── 📥 Download
-│
-└── 🔗 Share
+    C --> D[(🍃 MongoDB Database)]
+    C --> E[🤖 Google Gemini AI]
+    C --> F[🖼️ ImageKit]
+
+    B --> G[📄 Resume Editor]
+    G --> H[🎨 Templates & Customization]
+    G --> I[👀 Resume Preview]
+    I --> J[📥 Download / 🔗 Share]
+```
+
+### 🔄 Application Flow
+
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant F as React Frontend
+    participant B as Express Backend
+    participant DB as MongoDB
+    participant AI as Gemini AI
+    participant IMG as ImageKit
+
+    U->>F: Login / Register
+    F->>B: Authentication Request
+    B->>DB: Validate / Create User
+    DB-->>B: User Data
+    B-->>F: JWT Response
+
+    U->>F: Create / Edit Resume
+    F->>B: Resume API Request
+    B->>DB: Store Resume Data
+    DB-->>B: Saved Resume
+    B-->>F: Resume Response
+
+    U->>F: Improve Content with AI
+    F->>B: AI Request
+    B->>AI: Generate / Improve Content
+    AI-->>B: AI Response
+    B-->>F: Improved Content
+
+    U->>F: Upload Profile Image
+    F->>IMG: Upload Image
+    IMG-->>F: Image URL
+
+    F->>B: Save Resume
+    B->>DB: Store Resume + Image URL
 ```
 
 ---
 
-## ⚛️ Frontend Architecture
+## 🧩 Technology Stack
 
-The frontend is built using **React and Vite**.
+### Frontend
 
-It is organized into reusable components, pages, templates, and application state.
+- ⚛️ React.js
+- ⚡ Vite
+- 🎨 CSS / UI components
+- 🌐 REST API integration
+- 📱 Responsive design
 
-```text
-client/
-│
-├── src/
-│ │
-│ ├── app/
-│ │ ├── store.js
-│ │ └── features/
-│ │ └── authSlice.js
-│ │
-│ ├── components/
-│ │ ├── Navbar.jsx
-│ │ ├── Loader.jsx
-│ │ ├── ColorPicker.jsx
-│ │ ├── ResumePreview.jsx
-│ │ ├── PersonalInfoForm.jsx
-│ │ ├── ProfessionalSummaryForm.jsx
-│ │ ├── ExperienceForm.jsx
-│ │ ├── EducationForm.jsx
-│ │ ├── ProjectForm.jsx
-│ │ ├── SkillsForm.jsx
-│ │ └── TemplateSelector.jsx
-│ │
-│ ├── pages/
-│ │ ├── Home.jsx
-│ │ ├── Login.jsx
-│ │ ├── Dashboard.jsx
-│ │ ├── ResumeBuilder.jsx
-│ │ ├── Preview.jsx
-│ │ └── Layout.jsx
-│ │
-│ ├── assets/
-│ │ └── templates/
-│ │
-│ ├── configs/
-│ │ └── api.js
-│ │
-│ ├── App.jsx
-│ ├── main.jsx
-│ └── index.css
-│
-└── package.json
-```
+### Backend
 
-### Frontend Responsibilities
+- 🟢 Node.js
+- 🚂 Express.js
+- 🔐 JWT Authentication
+- 🔒 bcrypt password hashing
+- 🌐 REST APIs
 
-- 🖥️ User interface
-- 📝 Resume forms
-- 👀 Resume preview
-- 🎨 Template selection
-- 🌈 Accent color selection
-- 🔐 Authentication state
-- 🔄 API communication
-- 📱 Responsive user experience
+### Database
+
+- 🍃 MongoDB
+- 📦 MongoDB data models for users and resumes
+
+### AI
+
+- 🤖 Google Gemini API
+
+Used for AI-assisted resume content enhancement.
+
+### Image Management
+
+- 🖼️ ImageKit
+
+Used for profile image storage and delivery.
+
+### Deployment
+
+- ▲ Vercel — Frontend
+- 🚀 Render — Backend
+- 🍃 MongoDB — Cloud database
 
 ---
 
-## 🟢 Backend Architecture
-
-The backend is built using **Node.js and Express.js**.
-
-The backend follows a modular structure with separate routes, controllers, models, middleware, and configuration files.
-
-```text
-server/
-│
-├── configs/
-│ ├── ai.js
-│ ├── db.js
-│ ├── imageKit.js
-│ └── multer.js
-│
-├── controllers/
-│ ├── UserController.js
-│ ├── resumeController.js
-│ └── aiController.js
-│
-├── middlewares/
-│ └── authMiddleware.js
-│
-├── models/
-│ ├── User.js
-│ └── Resume.js
-│
-├── routes/
-│ ├── userRoutes.js
-│ ├── resumeRoutes.js
-│ └── aiRoutes.js
-│
-├── server.js
-└── package.json
-```
-
-### Backend Responsibilities
-
-- 🔐 Authentication
-- 👤 User management
-- 📄 Resume CRUD operations
-- 🤖 AI requests
-- 🖼️ Image uploads
-- 🍃 MongoDB operations
-- 🔗 Public resume access
-- 🛡️ Protected API routes
-
----
-
-## 🔐 Authentication Flow
-
-Authentication is implemented using **JWT-based authentication**.
-
-```text
-👤 User
-│
-▼
-Register / Login
-│
-▼
-Express Backend
-│
-▼
-Validate Credentials
-│
-▼
-Password Verification
-│
-▼
-JWT Token Generated
-│
-▼
-React Frontend
-│
-▼
-Protected API Requests
-│
-▼
-JWT Verification
-│
-▼
-✅ Authorized User
-```
-
-### Authentication Process
-
-1. The user registers or logs in.
-2. The backend validates the credentials.
-3. Passwords are securely hashed using bcrypt.
-4. A JWT token is generated after successful authentication.
-5. The frontend uses the token for authenticated requests.
-6. Backend middleware verifies the token before accessing protected resources.
-
----
-
-## 📝 Resume Creation Flow
-
-Users create their resume through the React-based resume builder.
-
-```text
-👤 User
-│
-▼
-Resume Builder
-│
-├── Personal Information
-├── Professional Summary
-├── Experience
-├── Education
-├── Projects
-└── Skills
-│
-▼
-Resume Data
-│
-▼
-REST API
-│
-▼
-Express Backend
-│
-▼
-MongoDB
-│
-▼
-💾 Saved Resume
-```
-
-The saved resume can later be retrieved, edited, previewed, downloaded, or shared.
-
----
-
-## 🤖 AI Integration Flow
-
-Google Gemini AI is integrated through the backend.
-
-The AI API credentials are kept on the server rather than being exposed directly in the frontend.
-
-```text
-👤 User
-│
-▼
-Enter Resume Content
-│
-▼
-React Frontend
-│
-▼
-AI API Request
-│
-▼
-Express Backend
-│
-▼
-Google Gemini AI
-│
-▼
-Enhanced Content
-│
-▼
-Express Backend
-│
-▼
-React Frontend
-│
-▼
-✨ Improved Resume Content
-```
-
-### Why use the backend for AI?
-
-The backend acts as a secure layer between the frontend and Gemini API.
-
-This helps keep sensitive API credentials out of the browser.
-
----
-
-## 🎨 Resume Template Architecture
-
-Resume data is separated from the visual design.
-
-This allows the same resume information to be displayed using different templates.
-
-```text
-📄 Resume Data
-│
-┌────────────┼────────────┐
-│ │ │
-▼ ▼ ▼
-Classic Modern Minimal
-Template Template Template
-│ │ │
-└────────────┼────────────┘
-│
-▼
-👀 Resume Preview
-```
-
-### Available Templates
-
-- 📄 Classic Template
-- ✨ Modern Template
-- 🖊️ Minimal Template
-- 🖼️ Minimal Image Template
-
-Users can switch templates without recreating their resume.
-
----
-
-## 🖼️ Image Upload Flow
-
-Profile images are handled using **ImageKit**.
-
-```text
-👤 User
-│
-▼
-Select Profile Image
-│
-▼
-React Frontend
-│
-▼
-Backend
-│
-▼
-ImageKit
-│
-▼
-Image URL
-│
-▼
-Resume Data
-```
-
-This allows image files to be stored and delivered separately from the main application server.
-
----
-
-## 🔗 Public Resume Sharing Flow
-
-Users can choose whether their resume should be public or private.
-
-When a resume is public, it can be accessed through a shareable link.
-
-```text
-👤 User
-│
-▼
-Resume Dashboard
-│
-▼
-Public / Private
-│
-▼
-🔗 Public Resume Link
-│
-▼
-👥 Recruiter / Viewer
-│
-▼
-📄 Resume Preview
-```
-
----
-
-## 🔌 REST API Architecture
-
-The backend APIs are divided according to functionality.
-
-```text
-🟢 Express Server
-│
-┌─────────────┼─────────────┐
-│ │ │
-▼ ▼ ▼
-/api/users /api/resumes /api/ai
-│ │ │
-▼ ▼ ▼
-User APIs Resume APIs AI APIs
-```
-
-### 👤 User Routes
-
-`/api/users`
-
-Responsible for user registration, login, and authentication-related operations.
-
-### 📄 Resume Routes
-
-`/api/resumes`
-
-Responsible for resume creation, retrieval, updating, deletion, and sharing functionality.
-
-### 🤖 AI Routes
-
-`/api/ai`
-
-Responsible for AI-powered resume enhancement and resume parsing functionality.
-
----
-
-## 🌐 Frontend ↔ Backend Communication
-
-The frontend and backend are maintained as separate applications inside the same GitHub repository.
-
-```text
-┌───────────────────────────┐
-│ ⚛️ CLIENT │
-│ │
-│ React + Vite │
-│ │
-│ Forms │
-│ Templates │
-│ Resume Preview │
-│ Authentication │
-└─────────────┬─────────────┘
-│
-│ REST API
-▼
-┌───────────────────────────┐
-│ 🟢 SERVER │
-│ │
-│ Node.js + Express │
-│ │
-│ Routes │
-│ Controllers │
-│ Authentication │
-│ AI Integration │
-└─────────────┬─────────────┘
-│
-┌──────┼──────┐
-▼ ▼ ▼
-MongoDB Gemini ImageKit
-```
-
-Keeping the frontend and backend separate makes the application easier to develop, maintain, test, and deploy.
-
----
-
-## ☁️ Production Deployment Architecture
-
-The frontend and backend are deployed separately.
-
-```text
-🐙 GitHub
-│
-┌─────────┴─────────┐
-│ │
-▼ ▼
-▲ Vercel ☁️ Render
-Frontend Backend
-│ │
-│ ┌────────┼────────┐
-│ │ │ │
-│ ▼ ▼ ▼
-│ MongoDB Gemini ImageKit
-│
-└──────── REST API ──────────┘
-```
-
-### Production Services
-
-| Layer | Technology | Purpose |
-|---|---|---|
-| 🎨 Frontend | Vercel | Hosts the React application |
-| 🟢 Backend | Render | Runs the Express API |
-| 🍃 Database | MongoDB | Stores users and resumes |
-| 🤖 AI | Google Gemini | Enhances resume content |
-| 🖼️ Images | ImageKit | Stores profile images |
-| 🐙 Source Control | GitHub | Version control and code hosting |
-
----
-
-## 📁 Complete Repository Structure
+## 📂 Project Structure
 
 ```text
 resume-builder/
 │
-├── 📁 client/
-│ ├── 📁 public/
-│ ├── 📁 src/
-│ │ ├── 📁 app/
-│ │ ├── 📁 assets/
-│ │ ├── 📁 components/
-│ │ ├── 📁 pages/
-│ │ ├── 📄 App.jsx
-│ │ ├── 📄 index.css
-│ │ └── 📄 main.jsx
-│ │
-│ ├── 📄 index.html
-│ ├── 📄 package.json
-│ └── 📄 vite.config.js
+├── client/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── templates/
+│   │   ├── assets/
+│   │   └── ...
+│   │
+│   ├── public/
+│   ├── package.json
+│   └── ...
 │
-├── 📁 server/
-│ ├── 📁 configs/
-│ ├── 📁 controllers/
-│ ├── 📁 middlewares/
-│ ├── 📁 models/
-│ ├── 📁 routes/
-│ ├── 📄 server.js
-│ └── 📄 package.json
+├── server/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── middleware/
+│   ├── config/
+│   ├── server.js
+│   └── package.json
 │
-├── 📄 .gitignore
-└── 📄 README.md
+├── .gitignore
+└── README.md
+```
+
+> The exact files and folders may evolve as new features are added.
+
+---
+
+## 🚀 How to Use the Application
+
+### 1️⃣ Open the application
+
+Visit the live application:
+
+**https://resume-builder-ashen-omega.vercel.app/**
+
+### 2️⃣ Create an account
+
+Register a new account and log in.
+
+### 3️⃣ Create your resume
+
+Enter your:
+
+- Personal information
+- Professional summary
+- Education
+- Experience
+- Projects
+- Skills
+
+### 4️⃣ Enhance content with AI
+
+Use the AI assistance to improve sections of your resume and make the content more professional.
+
+### 5️⃣ Choose a template
+
+Select the resume design that best matches your requirements.
+
+### 6️⃣ Customize the appearance
+
+Choose an accent color and configure the resume appearance.
+
+### 7️⃣ Preview
+
+Review the complete resume before finalizing it.
+
+### 8️⃣ Download or share
+
+Download the finished resume or share it publicly when required.
+
+---
+
+## 💻 Local Development Setup
+
+Follow these steps to run the project locally.
+
+### Prerequisites
+
+Make sure the following are installed:
+
+- Node.js
+- npm
+- Git
+- MongoDB account/database
+- Google Gemini API access
+- ImageKit account
+
+---
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/MounikaChelamsetti/resume-builder.git
+```
+
+```bash
+cd resume-builder
 ```
 
 ---
 
-## 🧭 Architecture at a Glance
+### 2. Install frontend dependencies
+
+```bash
+cd client
+npm install
+```
+
+---
+
+### 3. Install backend dependencies
+
+Open another terminal and run:
+
+```bash
+cd server
+npm install
+```
+
+---
+
+### 4. Configure environment variables
+
+Create the required `.env` file inside the backend according to the environment variables used by the project.
+
+Typical configuration includes values for:
 
 ```text
-🚀 RESUME BUILDER
-│
-▼
-⚛️ React Frontend
-│
-REST APIs
-│
-▼
-🟢 Express Backend
-│
-┌─────────────────┼─────────────────┐
-│ │ │
-▼ ▼ ▼
-🍃 MongoDB 🤖 Gemini AI 🖼️ ImageKit
-│ │ │
-└─────────────────┼─────────────────┘
-│
-▼
-📄 Resume System
-│
-┌──────────┴──────────┐
-▼ ▼
-📥 Download 🔗 Share
+MONGODB_URI
+JWT_SECRET
+GEMINI_API_KEY
+IMAGEKIT configuration
+```
+
+> Never commit API keys, database credentials, JWT secrets, or other sensitive environment variables to GitHub.
+
+---
+
+### 5. Start the backend
+
+From the `server` directory:
+
+```bash
+npm start
+```
+
+or use the development command configured in the project.
+
+---
+
+### 6. Start the frontend
+
+From the `client` directory:
+
+```bash
+npm run dev
+```
+
+The Vite development server will provide a local URL, usually similar to:
+
+```text
+http://localhost:5173
 ```
 
 ---
+
+## 🔌 API Architecture
+
+The frontend communicates with the backend through REST APIs.
+
+The general request flow is:
+
+```text
+React Frontend
+      │
+      │ HTTP Request
+      ▼
+Express Routes
+      │
+      ▼
+Controllers
+      │
+      ├──────────────► MongoDB
+      │
+      ├──────────────► Google Gemini
+      │
+      └──────────────► ImageKit
+      │
+      ▼
+JSON Response
+      │
+      ▼
+React Frontend
+```
+
+This separation keeps the frontend responsible for the user interface while the backend handles business logic and external services.
+
+---
+
+## 🧠 Important Engineering Concepts Used
+
+### 🔐 JWT Authentication
+
+JWT tokens are used to maintain authenticated sessions.
+
+The token allows the backend to identify the logged-in user and protect user-specific resume operations.
+
+---
+
+### 🔒 Password Security
+
+Passwords are never stored directly in plain text.
+
+They are hashed using `bcrypt` before being stored in the database.
+
+---
+
+### 🗄️ User-Specific Data
+
+Resume data is associated with the authenticated user.
+
+This prevents users from directly accessing resumes belonging to another account through normal application requests.
+
+---
+
+### 🌐 REST API Communication
+
+The frontend and backend are separated into independent layers.
+
+The frontend sends HTTP requests to the backend and receives structured responses.
+
+This makes the application easier to maintain and extend.
+
+---
+
+## 🧪 Challenges & Solutions
+
+Building this application involved solving several practical full-stack development challenges.
+
+### Challenge 1 — Connecting Frontend and Backend
+
+**Problem:**
+
+The React frontend and Express backend run as separate applications, especially after deployment.
+
+**Solution:**
+
+REST APIs were used as the communication layer between the frontend and backend.
+
+This allows the frontend to request authentication, resume data, AI processing, and other backend functionality through HTTP requests.
+
+---
+
+### Challenge 2 — Securing User Resume Data
+
+**Problem:**
+
+Each user should only be able to access their own resumes.
+
+**Solution:**
+
+JWT-based authentication was implemented.
+
+Authenticated requests are verified on the backend before user-specific resume operations are performed.
+
+---
+
+### Challenge 3 — Password Security
+
+**Problem:**
+
+Storing plain-text passwords would create a serious security risk.
+
+**Solution:**
+
+Passwords are hashed using `bcrypt` before being stored in MongoDB.
+
+---
+
+### Challenge 4 — Integrating AI into Resume Creation
+
+**Problem:**
+
+Users may provide incomplete or poorly structured resume content.
+
+**Solution:**
+
+Google Gemini was integrated into the backend to improve and generate professional resume content.
+
+This allows users to transform basic information into clearer and more professional content.
+
+---
+
+### Challenge 5 — Managing Resume Templates
+
+**Problem:**
+
+The same resume information needs to work with different visual layouts.
+
+**Solution:**
+
+Resume content is separated from template presentation.
+
+This allows users to switch templates without having to recreate their resume data.
+
+---
+
+### Challenge 6 — Profile Image Management
+
+**Problem:**
+
+Storing and serving image files directly through the backend can increase server-side complexity.
+
+**Solution:**
+
+ImageKit is used for profile image storage and delivery.
+
+The application can store the resulting image reference along with the resume data.
+
+---
+
+### Challenge 7 — Cloud Deployment
+
+**Problem:**
+
+The frontend and backend need to be deployed independently while still communicating correctly.
+
+**Solution:**
+
+The frontend is deployed using Vercel and the backend using Render.
+
+Environment variables and API configuration are used to connect the deployed services.
+
+---
+
+## 📈 Future Improvements
+
+The project can be extended with additional features such as:
+
+- 📊 ATS resume scoring
+- 🎯 Job-description-based resume optimization
+- 💼 Job-specific resume generation
+- 📄 More professional resume templates
+- 📤 Export to additional document formats
+- 🔗 Custom public resume URLs
+- 📈 Resume analytics
+- 🌙 Dark mode
+- 👥 Collaborative resume editing
+- 🧠 More advanced AI recommendations
+
+---
+
+## 🌐 Deployment
+
+### Frontend
+
+The React + Vite frontend is deployed on **Vercel**.
+
+### Backend
+
+The Node.js + Express backend is deployed on **Render**.
+
+### Database
+
+MongoDB is used for persistent application data.
+
+### External Services
+
+The application integrates:
+
+- Google Gemini for AI functionality
+- ImageKit for image management
+
+---
+
+## 🔗 Project Links
+
+### 🌐 Live Application
+
+https://resume-builder-ashen-omega.vercel.app/
+
+### 💻 GitHub Repository
+
+https://github.com/MounikaChelamsetti/resume-builder
+
+### 👩‍💻 Developer
+
+**Mounika Chelamsetti**
+
+B.Tech — Computer Science Engineering (Artificial Intelligence)
+
+GitHub:
+
+https://github.com/MounikaChelamsetti
+
+---
+
+## ⭐ Why This Project?
+
+This project demonstrates practical experience in building and deploying a **full-stack web application** rather than only creating a frontend interface.
+
+It combines:
+
+- ⚛️ Modern frontend development
+- 🟢 Backend API development
+- 🔐 Authentication
+- 🗄️ Database management
+- 🤖 Generative AI integration
+- 🖼️ Cloud image management
+- 📄 Resume processing
+- ☁️ Cloud deployment
+- 🔗 Public sharing
+
+The project demonstrates how multiple technologies can work together to solve a real-world problem.
+
+---
+
+## 🎯 Skills Demonstrated
+
+```text
+Frontend Development
+        ↓
+React + Vite
+        ↓
+REST API Integration
+        ↓
+Node.js + Express
+        ↓
+Authentication & Security
+        ↓
+MongoDB
+        ↓
+Google Gemini AI
+        ↓
+ImageKit
+        ↓
+Cloud Deployment
+```
+
+---
+
+## 👩‍💻 Author
+
+### Mounika Chelamsetti
+
+B.Tech — Computer Science Engineering (Artificial Intelligence)
+
+Built as a full-stack project demonstrating modern web development, AI integration, authentication, database management, and cloud deployment.
+
+<p align="center">
+  🚀 <strong>Build your resume. Improve your profile. Land your opportunity.</strong>
+</p>
+
+<p align="center">
+  <a href="https://resume-builder-ashen-omega.vercel.app/">
+    🌐 <strong>Visit Live Demo</strong>
+  </a>
+</p>
+
+---
+
+## ⭐ Support
+
+If you found this project useful or interesting, consider giving the repository a ⭐ on GitHub.
+
+<p align="center">
+  <strong>Made with ❤️ by Mounika Chelamsetti</strong>
+</p>
